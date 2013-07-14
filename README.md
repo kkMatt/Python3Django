@@ -8,7 +8,7 @@ My setup for Python+Django.
 * Python 3.2 8 x64
 
 * Ubuntu 10 8 x64
-* 
+
 * MySQL
 
 **On Localhost I use:**
