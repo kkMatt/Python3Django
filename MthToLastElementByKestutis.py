@@ -47,7 +47,7 @@ for line in textLines:
     #print (["charPosFromEndToRetrieve: ", charPosFromEndToRetrieve])
     #print (["charPosFromEndToRetrieve: ", charPosFromEndToRetrieve])
 
-    if charPosToRetrieve > 0:
+    if charPosToRetrieve >= 0:
         charToRetrieve = elements[charPosToRetrieve]
 
         #print the requested character
