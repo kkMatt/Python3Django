@@ -29,6 +29,7 @@ for line in textLines:
 
     line = line.rstrip()
 
+
     #split elements to array
     elements = line.split(' ')
 
@@ -42,13 +43,15 @@ for line in textLines:
     charPosToRetrieve = len(elements)-1-charPosFromEndToRetrieve
 
     #DEBUG
+    #print(["line content: [", line, "]"])
     #print (["charPosFromEndToRetrieve: ", charPosFromEndToRetrieve])
     #print (["charPosFromEndToRetrieve: ", charPosFromEndToRetrieve])
 
-    charToRetrieve = elements[charPosToRetrieve]
+    if charPosToRetrieve > 0:
+        charToRetrieve = elements[charPosToRetrieve]
 
-    #print the requested character
-    print(charToRetrieve)
+        #print the requested character
+        print(charToRetrieve)
 
 #close the file
 textLines.close()
