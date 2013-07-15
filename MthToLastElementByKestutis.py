@@ -4,7 +4,7 @@ Mth to last element
 @date - 2013.07.14
 @email - kestutis.itsolutions@gmail.com
 @description - CodeEval Challenge #30, Print the M-th from the end element
-@version - 1.0
+@version - 1.0 
 """
 __author__ = 'Kestutis ITDev'
 
