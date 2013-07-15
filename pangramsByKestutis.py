@@ -22,7 +22,7 @@ else:
     file = 'Data31.txt'
 
 """
-@param sentence - the sencence, to be used for a search
+@param sentence - the sentence, to be used for a search
 @param ABC - the dictionary
 @return - missing letters from 'ABC' in a 'sentence'
 """
@@ -44,6 +44,9 @@ def getMissingABCLetters(sentence, ABC):
 #This is all our lowercase letters we need
 listOfLowercaseLetters = ascii_lowercase
 
+#debug
+#print(["ABC:", listOfLowercaseLetters])
+
 #open file for reading
 textLines = open(file, 'r')
 
@@ -53,13 +56,15 @@ for line in textLines:
         break
 
     line = line.rstrip()
-    missingLetters = getMissingABCLetters(line, listOfLowercaseLetters)
+    #debug
+    #print("-------------------------------")
+    #print("LINE:", line)   
+
+    #pass lowercase sentence and list of lowercase letters
+    missingLetters = getMissingABCLetters(line.lower(), listOfLowercaseLetters)
 
     #print missing letters
     print(missingLetters)
 
 #close the file
 textLines.close()
-
-
-
